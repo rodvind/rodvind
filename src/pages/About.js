@@ -42,7 +42,7 @@ const useStyles = createUseStyles({
           <Col className={classes.myCol}>
             <h1 className={classes.myTitle}>About me</h1>
             <p className={classes.myPara}>
-            Hi, I'm Rodvin Danaei, Full-stack Devloper, cloud enthusiast,gamer, and a die-heart fan of new technologies.
+            Hi, I'm Rodvin Danaei, a previous geneticist falling in love with programming and now a Full-stack Devloper, cloud advocate, data scientist, gamer, and a die-heart fan of all kinds of outdoor activities.
             </p>
           </Col>
         </Row>
