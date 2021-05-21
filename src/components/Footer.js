@@ -37,10 +37,13 @@ const useStyles = createUseStyles({
     height: '60px',
     // backgroundColor: '#fff',
     transition: 'all 0.2s ease-in-out',
-    color: '#fff',
+    color: '#838C95',
     fontSize: '21px',
     lineHeight: '60px',
     borderRadius: '100%',
+    '&:hover': {
+      color: '#afd'
+    },
   },
   chevContainer: {
         position: 'absolute',
@@ -48,14 +51,21 @@ const useStyles = createUseStyles({
         left: '50%',
         // bottom: '100',
         zIndex: 15,
-        marginLeft: '-30px'
+        marginLeft: '-30px',
+        
       },
 })
 const Link = styled.a`
-  color: #525252;
+  color: #838C95;
   :hover {
     color: #afd;
   }
+`
+const Creator = styled.p`
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 0.87rem;
+  color: #505050;
 `
 // const MyChevIcon = styled.div`
 //   color: #525252;
@@ -83,12 +93,13 @@ const Link = styled.a`
 
 const MyGithub = styled(FiGithub)`
   /* color: #fff; */
-  margin-top: 25px;
+  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 15px;
 `
 const Foot = styled.footer`
-  height: 30vh;
+  height: 20vh;
   background-color: #333f42;
   text-align: center;
   margin: 0;
@@ -118,30 +129,34 @@ const Foot = styled.footer`
 
 
 const MyTwitter = styled(FiTwitter)`
-  margin-top: 25px;
+  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 15px;
 `
 const MyLinkedin = styled(FiLinkedin)`
-  margin-top: 25px;
+  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 15px;
 `
 const MyInsta = styled(FiInstagram)`
-  margin-top: 25px;
+  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 15px;
 `
 
 export const Footer = () => {
   const classes = useStyles()
   return (
     <Foot>
-    <div className={classes.chevContainer}><a href="#home" className={classes.smoothScroll}><IoChevronUpCircleSharp size={45} /></a></div>
+    <div className={classes.chevContainer}><a href="#home" className={classes.smoothScroll}><IoChevronUpCircleSharp size={50} /></a></div>
     <Link href="https://twitter.com" target="_blank"><MyTwitter size={30} /></Link>
     <Link href="https://github.com"><MyGithub size={30} /></Link>
     <Link href="https://linkedin.com"><MyLinkedin size={30} /></Link>
     <Link href="https://instagram.com"><MyInsta size={30} /></Link>
+    <Creator>Created by Rodvin Danaei © 2021</Creator>
     </Foot>
   )
 }

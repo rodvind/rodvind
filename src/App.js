@@ -36,15 +36,18 @@ const App = () => {
   useEffect(() => {
     const data = JSON.stringify({ "siteUrl": "https://rodvind.io" })
     const updateCount = async () => {
+      const req = await axios({
+        method: 'GET',
+        url: process.env.REACT_APP_API_URL
+      })
+      console.log('getCount:', req.data[0].visits)
+      setCount(req.data[0].visits)
       const res = await axios({
         method: 'POST',
-        url: 'https://wgec6trvc4.execute-api.us-east-1.amazonaws.com/Prod/',
+        url: process.env.REACT_APP_API_URL,
         data
       })
       console.log(res)
-      const req = await axios.get('https://wgec6trvc4.execute-api.us-east-1.amazonaws.com/Prod/')
-      console.log('getCount:', req.data[0].visits)
-      setCount(req.data[0].visits)
     }
 
     // const getCount = async () => {
@@ -97,7 +100,7 @@ const App = () => {
         <Jumbo count={count} />
         <About />
         <Resume />
-        <Tools />
+        
         <Footer />
       </CounterContext.Provider>
     </div> 

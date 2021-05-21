@@ -1,10 +1,7 @@
 import React from 'react'
-import { Container, NavDropdown } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
-
 import logo from '../logo.svg'
-
 import { createUseStyles } from 'react-jss'
 import styled from 'styled-components'
 
@@ -25,6 +22,7 @@ const useStyles = createUseStyles({
 })
  
 const HeaderNav = styled(Nav.Link)`
+  /* font-size: 1.5rem; */
   color: #B4975A !important;
   &.active {
     color: #f00 !important;
@@ -33,19 +31,24 @@ const HeaderNav = styled(Nav.Link)`
     color: #afd !important;
   }
 `
-  
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+  margin-right: 0;
+`
+// <img
+// alt="logo"
+// src={logo}
+// width="70"
+// height="70"
+// className="d-inline-block align-top"
+// />
 export const NavHeader = () => {
   const classes = useStyles()
   return (
     <Navbar className={classes.navBkg} collapseOnSelect expand="lg" variant="dark" sticky="top">
     <Navbar.Brand href="/">
-      <img
-        alt="logo"
-        src={logo}
-        width="100"
-        height="100"
-        className="d-inline-block align-top"
-      />
+      <Logo alt="logo" src={logo} />
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
