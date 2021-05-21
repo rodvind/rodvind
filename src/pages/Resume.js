@@ -109,10 +109,10 @@ export const Resume = () => {
           </Col>
           <Col xs={8} sm={9} md={9} lg={9}>
             <Col>
-              <a href="https://www.credly.com/badges/9cbf6658-9301-4380-9bc9-6f20277f1d1f/public_url" target="_blank">
+              <a href="https://www.credly.com/badges/9cbf6658-9301-4380-9bc9-6f20277f1d1f/public_url" target="_blank" rel="noreferrer">
                 <Image src={ASA} />
               </a>
-              <a href="https://www.credly.com/badges/debc0506-c300-4f21-8331-0ff07cf4a6f6/public_url">
+              <a href="https://www.credly.com/badges/debc0506-c300-4f21-8331-0ff07cf4a6f6/public_url" target="_blank" rel="noreferrer">
                 <Image src={PMP} />
               </a>
             </Col>

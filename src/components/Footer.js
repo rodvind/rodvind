@@ -1,14 +1,7 @@
 import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi'
-import { BiChevronUpCircle } from 'react-icons/bi'
-import { IoChevronUpCircleSharp, IoChevronUpCircleOutline, IoChevronUpOutline, IoChevronUpCircle } from 'react-icons/io5'
+import { IoChevronUpCircleSharp } from 'react-icons/io5'
 import { createUseStyles } from 'react-jss'
-import { Jumbotron } from 'react-bootstrap'
-import { FaSpinner } from 'react-icons/fa'
 
 import styled from 'styled-components'
 
@@ -67,36 +60,13 @@ const Creator = styled.p`
   font-size: 0.87rem;
   color: #505050;
 `
-// const MyChevIcon = styled.div`
-//   color: #525252;
-//   &::before {
-//     content: "\f139";
-//     display: block;
-//     font-family: "Font Awesome 5 Free"; 
-//     font-weight: 900;
-//     position: absolute;
-//     top: -50px;
-//     left: 50%;     
-//     margin-left: -30px;
-//     color: #535353;
-//     /* background-color: #525252; */
-//     font-style: normal;
-//     font-variant: normal;
-//     text-rendering: auto;
-//     -webkit-font-smoothing: antialiased;
-//     font-size: 3.5rem;
-//   };
-//   :hover {
-//     color: #afd;
-//   }
-// `
 
 const MyGithub = styled(FiGithub)`
   /* color: #fff; */
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 const Foot = styled.footer`
   height: 20vh;
@@ -129,22 +99,22 @@ const Foot = styled.footer`
 
 
 const MyTwitter = styled(FiTwitter)`
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 const MyLinkedin = styled(FiLinkedin)`
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 const MyInsta = styled(FiInstagram)`
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 
 export const Footer = () => {

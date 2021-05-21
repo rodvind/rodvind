@@ -1,9 +1,7 @@
 import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import { createUseStyles } from 'react-jss'
-import { AiFillGithub, AiFillLinkedin, AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi'
-import { FaLinkedinIn } from 'react-icons/fa';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Container } from 'react-bootstrap'
@@ -16,12 +14,7 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     alignSelf: 'center',
     margin: 0,
-    // justifyContent: 'center',
-    // justifyItems: 'center',
-    // justifySelf: 'center',
     borderRadius: 0,
-    // padding: 'auto'
-    // height: '100vh'
   },
   myTitle: {
     color: '#B4975A',
@@ -47,7 +40,6 @@ const useStyles = createUseStyles({
     paddingLeft: '0'
   },
   verticalCenter: {
-    minHeight: '100%',
     minHeight: '100vh',
     // display: 'flex',
     // flexDirection: 'column',
@@ -102,10 +94,10 @@ export const Jumbo = ({ count }) => {
           </Col>
         </Row>
         <hr />
-        <a href="https://twitter.com" target="_blank"><FiTwitter className={classes.iconBkg} size={30} /></a>
-        <a href="https://github.com"><FiGithub className={classes.iconBkg} size={30} /></a>
-        <a href="https://linkedin.com"><FiLinkedin className={classes.iconBkg} size={30} /></a>
-        <a href="https://instagram.com"><FiInstagram className={classes.iconBkg} size={30} /></a>
+        <a href="https://twitter.com" target="_blank" rel="noreferrer"><FiTwitter className={classes.iconBkg} size={30} /></a>
+        <a href="https://github.com" target="_blank" rel="noreferrer"><FiGithub className={classes.iconBkg} size={30} /></a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FiLinkedin className={classes.iconBkg} size={30} /></a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer"><FiInstagram className={classes.iconBkg} size={30} /></a>
         <Container className={classes.myChevRow}>
           <Row >
             <Col>
